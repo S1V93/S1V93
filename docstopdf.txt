@@ -1,0 +1,33 @@
+//Get the path of documents into DirectoryInfo
+DirectoryInfo directoryInfo = new DirectoryInfo("../../Documents/");
+ 
+//Create a new PDF document
+PdfDocument document = new PdfDocument();
+ 
+//Initialize MemoryStream
+MemoryStream stream = new MemoryStream();
+ 
+//Convert the documents to PDF
+foreach (FileInfo fileInfo in directoryInfo.GetFiles())
+{
+     
+ 
+       
+        //Convert the Word document into PDF and store it in stream
+        if (fileInfo.Extension == ".doc" || fileInfo.Extension == ".docx")
+            stream = ConvertWordToPDF(fileInfo.FullName);
+ 
+       
+ 
+        //Load the stream into PdfLoadedDocument
+        PdfLoadedDocument loadedDocument = new PdfLoadedDocument(stream);
+ 
+        //Add the watermark
+        AddWatermark(loadedDocument, document);
+}
+ 
+//Save the PDF document
+document.Save("MergedPDF.pdf");
+ 
+//Close the instance of PdfDocument
+document.Close(true);
