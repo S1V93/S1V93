@@ -1,0 +1,7 @@
+https://learn.microsoft.com/en-us/power-apps/developer/component-framework/implementing-controls-using-typescript
+
+https://powerapps.microsoft.com/et-ee/blog/virtual-code-components-for-power-apps-using-react-and-fluent-ui-react-platform-libraries/
+
+https://developer.microsoft.com/en-us/fluentui#/controls/web/activityitem
+
+https://learn.microsoft.com/en-us/power-apps/developer/component-framework/custom-controls-overview
