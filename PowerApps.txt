@@ -5,3 +5,6 @@ https://powerapps.microsoft.com/et-ee/blog/virtual-code-components-for-power-app
 https://developer.microsoft.com/en-us/fluentui#/controls/web/activityitem
 
 https://learn.microsoft.com/en-us/power-apps/developer/component-framework/custom-controls-overview
+
+
+https://github.com/alduzzen1985/LookupNotesViewer/tree/master/LookupNotesViewer
